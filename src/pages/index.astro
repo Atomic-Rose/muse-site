@@ -247,22 +247,22 @@ const icons = {
             <p class="kicker">Plan</p>
             <h2 id="f2">See the story before you rewrite it.</h2>
             <p>
-              Step back from the page and view your manuscript as a whole — rearrange
-              scenes, follow your timeline, and spot structural problems before they
-              cost you a draft.
+              Step back from the page and see your manuscript as a whole — rearrange
+              scenes on a corkboard or a spatial canvas, and trace the characters and
+              subplots that run through your story.
             </p>
             <ul class="pills">
               <li>Corkboard &amp; canvas</li>
-              <li>Timeline</li>
-              <li>Structure &amp; tension</li>
+              <li>Outliner</li>
+              <li>Story threads</li>
             </ul>
           </div>
           <div class="band-visual" aria-hidden="true">
             <div class="mini mini-board">
               <div class="board-tabs">
                 <span class="tab active">Corkboard</span>
-                <span class="tab">Timeline</span>
-                <span class="tab">Structure</span>
+                <span class="tab">Canvas</span>
+                <span class="tab">Connections</span>
               </div>
               <div class="board-grid">
                 <div class="board-card"><span class="mk-card-bar gold"></span><b>The crossing</b><i></i><i class="s"></i></div>
@@ -270,11 +270,10 @@ const icons = {
                 <div class="board-card"><span class="mk-card-bar"></span><b>Landfall</b><i></i><i class="s"></i></div>
                 <div class="board-card"><span class="mk-card-bar blue"></span><b>The wreck</b><i></i><i class="s"></i></div>
               </div>
-              <div class="tension">
-                <span class="tension-label">Tension</span>
-                <svg viewBox="0 0 220 44" preserveAspectRatio="none"
-                  ><path d="M0 34 C 40 34, 50 12, 78 16 S 128 4, 158 22 S 205 8, 220 11"
-                    fill="none" stroke="currentColor" stroke-width="2" /></svg>
+              <div class="threads">
+                <span class="thread-chip"><i class="tdot gold"></i>Mara — POV</span>
+                <span class="thread-chip"><i class="tdot blue"></i>Subplot · The wreck</span>
+                <span class="thread-chip"><i class="tdot"></i>Setup → Payoff</span>
               </div>
             </div>
           </div>
@@ -1215,27 +1214,34 @@ const icons = {
       .board-card i.s {
         flex-basis: 50%;
       }
-      .tension {
+      .threads {
         display: flex;
-        align-items: center;
-        gap: 0.7rem;
-        color: var(--accent);
-        border: 1px solid var(--border);
-        border-radius: 10px;
-        background: var(--bg);
-        padding: 0.55rem 0.8rem;
+        flex-wrap: wrap;
+        gap: 0.5rem;
       }
-      .tension-label {
-        color: var(--muted-2);
-        font-size: 0.7rem;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
+      .thread-chip {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.35rem 0.7rem;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        background: var(--bg);
+        color: var(--muted);
+        font-size: 0.78rem;
+      }
+      .tdot {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        background: var(--muted-2);
         flex: none;
       }
-      .tension svg {
-        display: block;
-        width: 100%;
-        height: 38px;
+      .tdot.gold {
+        background: var(--gold);
+      }
+      .tdot.blue {
+        background: var(--blue);
       }
 
       .mini-revise .mk-line {

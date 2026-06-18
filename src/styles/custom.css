@@ -1,51 +1,62 @@
-/* MUSE brand palette
-   Derived from branding/muse-logo.svg:
-     deep blue   #2E4D66
-     gold        #C9A84C
-     mid blue    #6A9DBE
-     light blue  #8DBDD8
-   The palette is intentionally calm and low-saturation, matching the app. */
+/* MUSE docs theme — aligned with the landing page (src/pages/index.astro).
+   Light: warm paper + deep-blue ink accent. Dark: slate + brighter blue.
+   Starlight is themed by overriding its accent and gray scale per color mode. */
 
+/* Shared fonts: sans body, serif headings (literary identity). */
 :root {
-  /* Accent (gold) — used for links, active states, hero buttons. */
-  --sl-color-accent-low: #3a3014;
-  --sl-color-accent: #c9a84c;
-  --sl-color-accent-high: #e7d9a6;
-
-  /* Neutral grays tuned slightly toward the brand blue. */
-  --sl-color-white: #f6f8fa;
-  --sl-color-gray-1: #e3e8ed;
-  --sl-color-gray-2: #b6c2cd;
-  --sl-color-gray-3: #7d8b98;
-  --sl-color-gray-4: #4d5a66;
-  --sl-color-gray-5: #2c3640;
-  --sl-color-gray-6: #1c242c;
-  --sl-color-black: #131a20;
-}
-
-/* Light theme overrides */
-:root[data-theme='light'] {
-  --sl-color-accent-low: #efe4c2;
-  --sl-color-accent: #9a7e2f;
-  --sl-color-accent-high: #4a3c14;
-
-  --sl-color-white: #16222c;
-  --sl-color-gray-1: #1e2a35;
-  --sl-color-gray-2: #33424f;
-  --sl-color-gray-3: #5c6b78;
-  --sl-color-gray-4: #8696a3;
-  --sl-color-gray-5: #c3ccd4;
-  --sl-color-gray-6: #e7ebef;
-  --sl-color-gray-7: #f2f5f7;
-  --sl-color-black: #ffffff;
-}
-
-/* Slightly warmer, calmer body type for a writing-focused product. */
-:root {
-  --sl-font: 'Georgia', 'Iowan Old Style', 'Palatino Linotype', serif;
+  --sl-font: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
   --sl-font-system: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --muse-font-serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia,
+    'Times New Roman', serif;
 }
-/* Keep UI chrome (sidebar, nav) in the system font; only widen body prose. */
-.sl-markdown-content {
-  font-family: var(--sl-font);
+
+/* ─── Dark theme (Starlight default) — slate + brighter blue ─────────────── */
+:root {
+  --sl-color-accent-low: #14323f;
+  --sl-color-accent: #4f86b3;
+  --sl-color-accent-high: #d3e4f1;
+
+  --sl-color-white: #f4f8fb; /* headings */
+  --sl-color-gray-1: #e7edf1;
+  --sl-color-gray-2: #c2ccd3; /* body text */
+  --sl-color-gray-3: #8b969d;
+  --sl-color-gray-4: #586770;
+  --sl-color-gray-5: #2a3640; /* borders */
+  --sl-color-gray-6: #141d24; /* elevated surfaces */
+  --sl-color-black: #0f161b; /* page background */
+
+  --sl-color-text-accent: #84b3da;
+}
+
+/* ─── Light theme — warm paper + deep-blue ink ───────────────────────────── */
+:root[data-theme='light'] {
+  --sl-color-accent-low: #e9eff4;
+  --sl-color-accent: #2e4d66;
+  --sl-color-accent-high: #20384b;
+
+  --sl-color-white: #16222c; /* darkest ink (Starlight inverts the scale) */
+  --sl-color-gray-1: #1e2a33;
+  --sl-color-gray-2: #33424d; /* body text */
+  --sl-color-gray-3: #5c6b75;
+  --sl-color-gray-4: #8b949b;
+  --sl-color-gray-5: #ddd8cd; /* warm borders */
+  --sl-color-gray-6: #efece4; /* elevated surfaces */
+  --sl-color-gray-7: #f6f4ee;
+  --sl-color-black: #fbfaf7; /* warm paper background */
+
+  --sl-color-text-accent: #2e4d66;
+}
+
+/* Serif headings in prose + the site title, to echo the landing page. */
+.sl-markdown-content h1,
+.sl-markdown-content h2,
+.sl-markdown-content h3,
+.site-title {
+  font-family: var(--muse-font-serif);
+  letter-spacing: -0.01em;
+}
+
+.sl-markdown-content h1 {
+  font-weight: 600;
 }
