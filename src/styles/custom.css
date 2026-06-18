@@ -1,0 +1,56 @@
+/* MUSE brand palette
+   Derived from branding/muse-logo.svg:
+     deep blue   #2E4D66
+     gold        #C9A84C
+     mid blue    #6A9DBE
+     light blue  #8DBDD8
+   The palette is intentionally calm and low-saturation, matching the app. */
+
+:root {
+  /* Accent (gold) — used for links, active states, hero buttons. */
+  --sl-color-accent-low: #3a3014;
+  --sl-color-accent: #c9a84c;
+  --sl-color-accent-high: #e7d9a6;
+
+  /* Neutral grays tuned slightly toward the brand blue. */
+  --sl-color-white: #f6f8fa;
+  --sl-color-gray-1: #e3e8ed;
+  --sl-color-gray-2: #b6c2cd;
+  --sl-color-gray-3: #7d8b98;
+  --sl-color-gray-4: #4d5a66;
+  --sl-color-gray-5: #2c3640;
+  --sl-color-gray-6: #1c242c;
+  --sl-color-black: #131a20;
+}
+
+/* Light theme overrides */
+:root[data-theme='light'] {
+  --sl-color-accent-low: #efe4c2;
+  --sl-color-accent: #9a7e2f;
+  --sl-color-accent-high: #4a3c14;
+
+  --sl-color-white: #16222c;
+  --sl-color-gray-1: #1e2a35;
+  --sl-color-gray-2: #33424f;
+  --sl-color-gray-3: #5c6b78;
+  --sl-color-gray-4: #8696a3;
+  --sl-color-gray-5: #c3ccd4;
+  --sl-color-gray-6: #e7ebef;
+  --sl-color-gray-7: #f2f5f7;
+  --sl-color-black: #ffffff;
+}
+
+/* Give the hero a soft brand-blue wash. */
+.hero {
+  --overlay-blurple: #2e4d66;
+}
+
+/* Slightly warmer, calmer body type for a writing-focused product. */
+:root {
+  --sl-font: 'Georgia', 'Iowan Old Style', 'Palatino Linotype', serif;
+  --sl-font-system: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+/* Keep UI chrome (sidebar, nav) in the system font; only widen body prose. */
+.sl-markdown-content {
+  font-family: var(--sl-font);
+}

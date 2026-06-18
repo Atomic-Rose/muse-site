@@ -1,0 +1,85 @@
+---
+title: MUSE
+description: A calm, modern desktop home for book-length writing — Scrivener-style organization, a powerful editor, and single-file projects that stay on your computer.
+template: splash
+hero:
+  tagline: Manuscript Unified Studio Environment. Organize, draft, revise, and export book-length work — without leaving your desk or trusting your manuscript to the cloud.
+  image:
+    file: ../../assets/muse-logo.svg
+  actions:
+    - text: Download the alpha
+      link: /alpha/install/
+      icon: down-caret
+      variant: primary
+    - text: Read the manual
+      link: /manual/getting-started/
+      icon: open-book
+      variant: minimal
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+## Built for long-form writers
+
+MUSE is a desktop writing app for novelists, screenwriters, and researchers. It pairs
+Scrivener-level organizational power with a modern, elegant editor — and stores everything
+in a single `.muse` file on your own computer.
+
+<CardGrid stagger>
+	<Card title="Organize like Scrivener" icon="list-format">
+		A drag-and-drop binder tree, custom metadata, labels and statuses, smart
+		collections, and a Scene Board with seven planning views — from corkboard to
+		timeline to story structure.
+	</Card>
+	<Card title="Write without friction" icon="pencil">
+		A rich editor built to handle 80,000-word manuscripts without slowing down.
+		Wikilinks, focus mode, typewriter scrolling, and live spelling and grammar help.
+	</Card>
+	<Card title="Revise with confidence" icon="approve-check">
+		A complete review workflow: tracked changes, named revision passes, anchored
+		comments, and version snapshots you can roll back to at any time.
+	</Card>
+	<Card title="Export to real formats" icon="document">
+		Compile your manuscript to DOCX (with tracked changes), PDF, or Markdown using
+		flexible presets and per-document overrides.
+	</Card>
+	<Card title="Your work stays yours" icon="approve-check">
+		Single-file SQLite projects live on your disk. No cloud account, no telemetry,
+		no uploading your manuscript. An automatic backup system keeps you safe.
+	</Card>
+	<Card title="Calm by design" icon="star">
+		High-contrast and dyslexia-friendly options, reduced-motion support, 60
+		configurable keyboard shortcuts, and a focused, three-panel layout.
+	</Card>
+</CardGrid>
+
+## New here?
+
+<CardGrid>
+	<LinkCard
+		title="What is MUSE?"
+		description="A short tour of what the app does and who it's for."
+		href="/manual/what-is-muse/"
+	/>
+	<LinkCard
+		title="Install & first launch"
+		description="Download, install, and open MUSE for the first time on macOS, Windows, or Linux."
+		href="/alpha/install/"
+	/>
+	<LinkCard
+		title="Getting started"
+		description="Create your first project and learn the three-panel layout."
+		href="/manual/getting-started/"
+	/>
+	<LinkCard
+		title="Backups & safety"
+		description="How MUSE protects your manuscript and how to recover work."
+		href="/manual/backups-and-safety/"
+	/>
+</CardGrid>
+
+:::note[Now in private alpha]
+MUSE is in early testing. Expect rough edges — and please keep copies of anything you
+can't afford to lose. Every alpha and beta tester receives a permanent **50% discount
+code** at the 1.0 launch.
+:::
