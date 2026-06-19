@@ -135,49 +135,40 @@ const icons = {
           </div>
 
           <div class="hero-visual" aria-hidden="true">
-            <div class="app-window">
-              <div class="title-bar">
-                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-                <span class="title-bar-name">Northwind.muse</span>
+            <div class="mock mock-editor">
+              <div class="m-bar">
+                <span class="m-doc-title">The Glass Observatory</span>
+                <span class="m-tabs"><b>Editor</b><span>Home</span><span>Insert</span><span>Review</span></span>
               </div>
-              <div class="app-body">
-                <aside class="mk-binder">
-                  <p class="mk-eyebrow">Binder</p>
-                  <ul>
-                    <li class="folder open">Manuscript</li>
-                    <li class="doc">1 · The harbor</li>
-                    <li class="doc"><span class="lab gold"></span>7 · The crossing</li>
-                    <li class="doc active"><span class="lab blue"></span>8 · Low water</li>
-                    <li class="doc">9 · Landfall</li>
-                    <li class="folder">Characters</li>
-                    <li class="doc">Mara Vance</li>
-                    <li class="folder">Research</li>
-                    <li class="doc">Tide tables</li>
-                  </ul>
-                </aside>
-                <div class="mk-editor">
-                  <p class="mk-synopsis">Mara reaches the far shore at slack tide.</p>
-                  <p class="mk-chapter">Chapter Eight</p>
-                  <p class="mk-line w-90"></p>
-                  <p class="mk-line w-full"></p>
-                  <p class="mk-line w-80"></p>
-                  <p class="mk-line w-full"></p>
-                  <p class="mk-line w-70 caret"></p>
-                  <p class="mk-line w-95"></p>
-                  <p class="mk-line w-60"></p>
+              <div class="m-toolbar">
+                <span class="m-field">Normal</span>
+                <span class="m-field">Georgia</span>
+                <span class="m-field sm">16</span>
+                <span class="m-sep"></span>
+                <span class="m-btn">B</span><span class="m-btn i">I</span><span class="m-btn u">U</span>
+                <span class="m-sep"></span>
+                <span class="m-dots"><i></i><i></i><i></i></span>
+              </div>
+              <div class="m-pagewrap">
+                <div class="m-page">
+                  <p>
+                    Nora Quill had spent twenty years making public meetings feel
+                    inevitable. She knew where to place the water glasses, when to clear
+                    her throat, and which silence would force a councilor to reveal fear.
+                  </p>
+                  <p>
+                    The demonstration should have been harmless. Mara would show the
+                    <span class="sp">rainlight</span>, Cassian would mutter about
+                    interference, and Nora would file a careful report with careful blanks.
+                  </p>
                 </div>
-                <aside class="mk-inspector">
-                  <p class="mk-eyebrow">Scene cards</p>
-                  <div class="mk-card"><span class="mk-card-bar gold"></span>The crossing</div>
-                  <div class="mk-card active"><span class="mk-card-bar blue"></span>Low water</div>
-                  <div class="mk-card"><span class="mk-card-bar"></span>Landfall</div>
-                  <p class="mk-eyebrow mt">Session</p>
-                  <div class="mk-goal"><span style="width:68%"></span></div>
-                  <p class="mk-goal-label">1,224 / 1,800 words</p>
-                </aside>
               </div>
-              <div class="status-bar">
-                <span>Saved</span><span>80,412 words</span><span>Suggesting</span>
+              <div class="m-status">
+                <span>94 words</span>
+                <span class="m-spacer"></span>
+                <span>Saved</span>
+                <span class="m-pill">In Export</span>
+                <span>100%</span>
               </div>
             </div>
             <div class="hero-glow"></div>
@@ -222,18 +213,19 @@ const icons = {
             </ul>
           </div>
           <div class="band-visual" aria-hidden="true">
-            <div class="mini mini-binder">
-              <p class="mk-eyebrow">Binder</p>
-              <ul>
-                <li class="folder open">Part One</li>
-                <li class="doc"><span class="lab gold"></span>Chapter 1 · The harbor</li>
-                <li class="doc"><span class="lab blue"></span>Chapter 2 · Slack tide</li>
-                <li class="doc dragging"><span class="lab gold"></span>Chapter 3 · The crossing</li>
-                <li class="folder">Characters</li>
-                <li class="doc">Mara Vance</li>
-                <li class="doc">Captain Roe</li>
-                <li class="folder">Research</li>
-                <li class="doc">Tide tables</li>
+            <div class="mock mock-binder">
+              <div class="m-binder-top"><span>BINDER</span><span class="m-template">Template</span></div>
+              <div class="m-binder-label">COLLECTIONS</div>
+              <ul class="m-tree">
+                <li class="t-folder">Manuscript</li>
+                <li class="t-folder d1">Act I — The Signal</li>
+                <li class="t-doc d2 active"><i class="lab blue"></i>1. The Rain Inside the Lens</li>
+                <li class="t-doc d2">2. Mara Finds the Map</li>
+                <li class="t-doc d2"><i class="lab purple"></i>3. The Observatory Wakes</li>
+                <li class="t-doc d2"><i class="lab green"></i>4. A Public Demonstration</li>
+                <li class="t-folder d1 closed">Act II — The Mirror City</li>
+                <li class="t-folder closed">Characters</li>
+                <li class="t-folder closed">Research</li>
               </ul>
             </div>
           </div>
@@ -258,22 +250,31 @@ const icons = {
             </ul>
           </div>
           <div class="band-visual" aria-hidden="true">
-            <div class="mini mini-board">
-              <div class="board-tabs">
-                <span class="tab active">Corkboard</span>
-                <span class="tab">Canvas</span>
-                <span class="tab">Connections</span>
+            <div class="mock mock-canvas">
+              <svg class="m-connect" viewBox="0 0 100 100" preserveAspectRatio="none">
+                <path d="M26 34 C 48 46, 50 54, 72 66" fill="none" stroke="currentColor" stroke-width="0.7" />
+              </svg>
+              <div class="m-group">
+                <span class="m-group-tag">Act I: Signal</span>
+                <div class="m-sgrid">
+                  <div class="m-scard">
+                    <b>1. The Rain Inside…</b>
+                    <span>Mara discovers impossible weather falling inside a sealed lens.</span>
+                    <em>To Do · 103</em>
+                  </div>
+                  <div class="m-scard">
+                    <b>2. Mara Finds the Map</b>
+                    <span>A hidden calibration room reveals weather that hasn't happened yet.</span>
+                    <em>In Progress · 104</em>
+                  </div>
+                </div>
               </div>
-              <div class="board-grid">
-                <div class="board-card"><span class="mk-card-bar gold"></span><b>The crossing</b><i></i><i class="s"></i></div>
-                <div class="board-card"><span class="mk-card-bar blue"></span><b>Low water</b><i></i><i class="s"></i></div>
-                <div class="board-card"><span class="mk-card-bar"></span><b>Landfall</b><i></i><i class="s"></i></div>
-                <div class="board-card"><span class="mk-card-bar blue"></span><b>The wreck</b><i></i><i class="s"></i></div>
-              </div>
-              <div class="threads">
-                <span class="thread-chip"><i class="tdot gold"></i>Mara — POV</span>
-                <span class="thread-chip"><i class="tdot blue"></i>Subplot · The wreck</span>
-                <span class="thread-chip"><i class="tdot"></i>Setup → Payoff</span>
+              <div class="m-group alt">
+                <span class="m-group-tag">Act II: Mirror City</span>
+                <div class="m-sgrid">
+                  <div class="m-scard"><i class="lab green"></i><b>5. Beneath Meridian</b><span>Cassian leads Mara under the old rail terminal.</span><em>In Progress · 105</em></div>
+                  <div class="m-scard"><i class="lab gold"></i><b>6. The Orchard</b><span>An archive where storms grow on trees.</span><em>First Draft · 89</em></div>
+                </div>
               </div>
             </div>
           </div>
@@ -298,19 +299,30 @@ const icons = {
             </ul>
           </div>
           <div class="band-visual" aria-hidden="true">
-            <div class="mini mini-revise">
-              <div class="revise-tag"><span class="dot-sm"></span>Revision pass · Line edit</div>
-              <p class="mk-line w-90"></p>
-              <p class="mk-line w-full"></p>
-              <p class="revise-change w-80">
-                A <span class="ins">new dawn</span> <span class="del">grey morning</span> over the bay.
-              </p>
-              <p class="mk-line w-95"></p>
-              <p class="mk-line w-70"></p>
-              <div class="comment">
-                <span class="comment-who">Editor</span>
-                “Tighten this beat — land on the image.”
+            <div class="mock mock-revise">
+              <div class="m-rev-main">
+                <p>
+                  Cassian Roe entered the tunnels with
+                  <span class="m-del">three lies prepared</span> and used all of them
+                  before the first locked gate.
+                </p>
+                <div class="m-pop">
+                  <div class="m-pop-h">DELETION<span>Line Edit</span></div>
+                  <div class="m-pop-d">three lies prepared</div>
+                  <div class="m-pop-a"><span class="ok">✓ Accept</span><span class="no">✕ Reject</span></div>
+                </div>
+                <p>
+                  The prism key waited inside a ticket booth wrapped in salt cloth, smaller
+                  than Mara had expected.
+                </p>
               </div>
+              <aside class="m-rev-side">
+                <div class="m-side-h">REVISION PASSES</div>
+                <div class="m-pass green"><i class="lab green"></i><b>Final Polish</b><small>1 pending</small></div>
+                <div class="m-pass orange"><i class="lab orange"></i><b>Line Edit</b><small>2 pending</small></div>
+                <div class="m-side-sub">VISIBILITY</div>
+                <div class="m-vchips"><span class="vchip green">Final Polish</span><span class="vchip orange">Line Edit</span></div>
+              </aside>
             </div>
           </div>
         </div>
@@ -333,24 +345,31 @@ const icons = {
             </ul>
           </div>
           <div class="band-visual" aria-hidden="true">
-            <div class="mini mini-export">
-              <p class="mk-eyebrow">Compile</p>
-              <div class="export-body">
-                <div class="page">
-                  <p class="page-title">Northwind</p>
-                  <p class="mk-line w-60"></p>
-                  <p class="mk-line w-full"></p>
-                  <p class="mk-line w-90"></p>
-                  <p class="mk-line w-full"></p>
-                  <p class="mk-line w-80"></p>
+            <div class="mock mock-compile">
+              <div class="m-comp-h">Compile Manuscript</div>
+              <div class="m-comp-body">
+                <div class="m-comp-tree">
+                  <div class="m-comp-sub">INCLUDE · 12 docs</div>
+                  <p>☑ Manuscript</p>
+                  <p class="i1">☑ Act I — The Signal</p>
+                  <p class="i2">☑ 1. The Rain Inside…</p>
+                  <p class="i2">☑ 2. Mara Finds the Map</p>
+                  <p class="i1">☑ Act II — Mirror City</p>
                 </div>
-                <div class="export-formats">
-                  <div class="fmt active"><span class="fmt-name">DOCX</span><span class="fmt-check">✓</span></div>
-                  <div class="fmt"><span class="fmt-name">PDF</span></div>
-                  <div class="fmt"><span class="fmt-name">Markdown</span></div>
-                  <div class="export-cta">Compile manuscript</div>
+                <div class="m-comp-mid">
+                  <label>Preset<span>Novel Manuscript</span></label>
+                  <label>Output format<span>Word Document (.docx)</span></label>
+                  <label>Track changes<span>Keep as-is</span></label>
+                  <div class="m-seg"><span class="on">Page</span><span>Scene</span><span>None</span></div>
+                </div>
+                <div class="m-comp-prev">
+                  <div class="m-prev-page">
+                    <span class="t">THE GLASS<br />OBSERVATORY</span>
+                    <span class="by">by Muse Demo Team</span>
+                  </div>
                 </div>
               </div>
+              <div class="m-comp-foot"><span>Cancel</span><span class="m-comp-go">Compile</span></div>
             </div>
           </div>
         </div>
@@ -618,11 +637,7 @@ const icons = {
         justify-content: space-between;
         height: 64px;
       }
-      .brand {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.6rem;
-      }
+  
       .brand img {
         border-radius: 8px;
       }
@@ -756,7 +771,7 @@ const icons = {
         letter-spacing: 0.02em;
       }
 
-      /* ---------- hero app mockup ---------- */
+      /* ---------- hero / section screenshots ---------- */
       .hero-visual {
         position: relative;
       }
@@ -767,214 +782,327 @@ const icons = {
         background: radial-gradient(closest-side, rgba(46, 77, 102, 0.16), transparent);
         filter: blur(50px);
       }
-      .app-window {
+      /* ---------- vector UI mockups (theme-aware, crisp at any DPI) ---------- */
+      .mock {
+        width: 100%;
         border: 1px solid var(--border);
         border-radius: var(--radius);
+        overflow: hidden;
         background: var(--surface);
         box-shadow: var(--shadow-lg);
-        overflow: hidden;
+        font-family: var(--font-sans);
+        font-size: 0.74rem;
+        line-height: 1.5;
+        color: var(--text);
       }
-      .title-bar {
+      .mock .lab {
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+        flex: none;
+      }
+      .lab.blue { background: var(--blue); }
+      .lab.gold { background: var(--gold); }
+      .lab.purple { background: #9a7bd0; }
+      .lab.green { background: #54a574; }
+      .lab.orange { background: #d6924a; }
+
+      /* Editor (hero) */
+      .m-bar {
         display: flex;
         align-items: center;
-        gap: 0.45rem;
-        padding: 0.7rem 0.9rem;
+        gap: 0.8rem;
+        padding: 0.5rem 0.8rem;
         border-bottom: 1px solid var(--border);
         background: var(--bg-soft);
       }
-      .title-bar .dot {
-        width: 11px;
-        height: 11px;
-        border-radius: 50%;
-        background: var(--window-dot);
+      .m-doc-title { font-weight: 600; }
+      .m-tabs { display: flex; gap: 0.7rem; color: var(--muted-2); font-size: 0.68rem; }
+      .m-tabs b { color: var(--accent); font-weight: 600; }
+      .m-toolbar {
+        display: flex;
+        align-items: center;
+        gap: 0.35rem;
+        padding: 0.4rem 0.8rem;
+        border-bottom: 1px solid var(--border);
+        background: var(--surface);
       }
-      .title-bar-name {
-        margin-left: 0.7rem;
+      .m-field {
+        border: 1px solid var(--border);
+        border-radius: 5px;
+        padding: 0.12rem 0.45rem;
+        color: var(--muted);
+        font-size: 0.64rem;
+      }
+      .m-field.sm { padding-inline: 0.35rem; }
+      .m-btn {
+        width: 1.1rem;
+        text-align: center;
+        font-weight: 700;
+        font-size: 0.66rem;
+        color: var(--muted);
+      }
+      .m-btn.i { font-style: italic; font-weight: 600; }
+      .m-btn.u { text-decoration: underline; }
+      .m-sep { width: 1px; height: 13px; background: var(--border); }
+      .m-dots { display: inline-flex; gap: 3px; }
+      .m-dots i { width: 4px; height: 4px; border-radius: 50%; background: var(--muted-2); }
+      .m-pagewrap { padding: 1.1rem 1.1rem 0; background: var(--bg-soft); }
+      .m-page {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-bottom: none;
+        border-radius: 6px 6px 0 0;
+        box-shadow: var(--shadow-sm);
+        padding: 1.1rem 1.3rem;
+        font-family: var(--font-serif);
+        font-size: 0.82rem;
+        line-height: 1.65;
+      }
+      .m-page p { margin: 0 0 0.8rem; }
+      .sp {
+        text-decoration: underline wavy #d4534f;
+        text-underline-offset: 2px;
+      }
+      .m-status {
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        padding: 0.4rem 0.8rem;
+        border-top: 1px solid var(--border);
+        background: var(--bg-soft);
         color: var(--muted-2);
-        font-size: 0.78rem;
-        letter-spacing: 0.01em;
-      }
-      .app-body {
-        display: grid;
-        grid-template-columns: 0.82fr 1.55fr 0.92fr;
-        min-height: 360px;
-      }
-      .mk-binder,
-      .mk-inspector {
-        padding: 0.95rem 0.85rem;
-        font-size: 0.74rem;
-      }
-      .mk-binder {
-        border-right: 1px solid var(--border);
-        background: #faf8f3;
-      }
-      .mk-inspector {
-        border-left: 1px solid var(--border);
-        background: #fbfaf6;
-      }
-      .mk-eyebrow {
-        margin: 0 0 0.7rem;
-        color: var(--muted-2);
-        text-transform: uppercase;
-        letter-spacing: 0.12em;
         font-size: 0.62rem;
       }
-      .mk-eyebrow.mt {
-        margin-top: 1.2rem;
+      .m-spacer { flex: 1; }
+      .m-pill {
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        padding: 0.05rem 0.45rem;
+        color: var(--accent);
       }
-      .mk-binder ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: grid;
-        gap: 0.26rem;
+
+      /* Binder */
+      .mock-binder { padding: 0.6rem 0.5rem; }
+      .m-binder-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.1rem 0.4rem 0.4rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        font-size: 0.68rem;
       }
-      .mk-binder li {
+      .m-template {
+        font-weight: 500;
+        color: var(--muted);
+        border: 1px solid var(--border);
+        border-radius: 5px;
+        padding: 0.1rem 0.4rem;
+        font-size: 0.6rem;
+      }
+      .m-binder-label {
+        color: var(--muted-2);
+        font-size: 0.58rem;
+        letter-spacing: 0.1em;
+        padding: 0.3rem 0.4rem;
+      }
+      .m-tree { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.12rem; }
+      .m-tree li {
         display: flex;
         align-items: center;
         gap: 0.4rem;
-        padding: 0.22rem 0.5rem;
+        padding: 0.3rem 0.45rem;
         border-radius: 6px;
         color: var(--muted);
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
       }
-      .mk-binder li.folder {
-        color: var(--text);
-        font-weight: 600;
-      }
-      .mk-binder li.folder::before {
-        content: '▸';
-        color: var(--muted-2);
-        font-size: 0.7em;
-      }
-      .mk-binder li.folder.open::before {
-        content: '▾';
-      }
-      .mk-binder li.doc {
-        padding-left: 1.2rem;
-      }
-      .mk-binder li.active {
+      .t-folder { color: var(--text); font-weight: 600; }
+      .t-folder::before { content: '▾'; color: var(--muted-2); font-size: 0.7em; }
+      .t-folder.closed::before { content: '▸'; }
+      .t-folder.d1 { padding-left: 1.1rem; }
+      .t-doc.d2 { padding-left: 1.9rem; }
+      .t-doc.active {
         background: var(--accent-soft);
         color: var(--accent-ink);
         font-weight: 600;
       }
-      .lab {
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: var(--muted-2);
-        flex: none;
-      }
-      .lab.gold {
-        background: var(--gold);
-      }
-      .lab.blue {
-        background: var(--blue);
-      }
-      .mk-editor {
-        padding: 1.6rem 1.7rem;
-        background: var(--surface);
-      }
-      .mk-synopsis {
-        margin: 0 0 1.2rem;
-        padding: 0.5rem 0.7rem;
-        border-left: 2px solid var(--accent);
-        background: var(--accent-soft);
-        border-radius: 0 6px 6px 0;
-        color: var(--accent-ink);
-        font-size: 0.78rem;
-        font-style: italic;
-      }
-      .mk-chapter {
-        font-family: var(--font-serif);
-        font-size: 1.2rem;
-        margin: 0 0 1.1rem;
-        color: var(--text);
-      }
-      .mk-line {
-        height: 0.58rem;
-        border-radius: 4px;
-        background: var(--skeleton);
-        margin: 0 0 0.72rem;
-      }
-      .mk-line.w-full { width: 100%; }
-      .mk-line.w-95 { width: 95%; }
-      .mk-line.w-90 { width: 90%; }
-      .mk-line.w-80 { width: 80%; }
-      .mk-line.w-70 { width: 70%; }
-      .mk-line.w-60 { width: 60%; }
-      .mk-line.caret {
+
+      /* Scene Board canvas */
+      .mock-canvas {
         position: relative;
-      }
-      .mk-line.caret::after {
-        content: '';
-        position: absolute;
-        right: -4px;
-        top: -2px;
-        width: 2px;
-        height: 1rem;
-        background: var(--accent);
-        animation: blink 1.1s steps(2, start) infinite;
-      }
-      @keyframes blink {
-        50% { opacity: 0; }
-      }
-      .mk-card {
         display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0.5rem 0.55rem;
-        margin-bottom: 0.5rem;
+        flex-direction: column;
+        gap: 1.1rem;
+        padding: 1.1rem;
+        background-color: var(--bg-soft);
+        background-image: radial-gradient(var(--border) 1px, transparent 1px);
+        background-size: 13px 13px;
+      }
+      .m-connect {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        color: var(--accent);
+        opacity: 0.5;
+        pointer-events: none;
+      }
+      .m-group {
+        position: relative;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 0.7rem;
+        background: color-mix(in srgb, var(--surface) 70%, transparent);
+      }
+      .m-group-tag {
+        display: inline-block;
+        margin-bottom: 0.55rem;
+        padding: 0.1rem 0.45rem;
+        border: 1px solid var(--border);
+        border-radius: 5px;
+        background: var(--surface);
+        color: var(--muted);
+        font-size: 0.62rem;
+      }
+      .m-sgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+      .m-scard {
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+        padding: 0.55rem;
         border: 1px solid var(--border);
         border-radius: 8px;
         background: var(--surface);
-        color: var(--muted);
-        font-size: 0.72rem;
         box-shadow: var(--shadow-sm);
       }
-      .mk-card.active {
-        border-color: var(--accent);
-        color: var(--text);
+      .m-scard b { font-size: 0.7rem; }
+      .m-scard span { color: var(--muted); font-size: 0.64rem; line-height: 1.4; }
+      .m-scard em { margin-top: 0.1rem; color: var(--muted-2); font-size: 0.58rem; font-style: normal; }
+
+      /* Revise */
+      .mock-revise { display: grid; grid-template-columns: 1.55fr 1fr; }
+      .m-rev-main {
+        position: relative;
+        padding: 1rem;
+        border-right: 1px solid var(--border);
+        font-family: var(--font-serif);
+        font-size: 0.8rem;
+        line-height: 1.7;
       }
-      .mk-card-bar {
-        width: 4px;
-        align-self: stretch;
-        border-radius: 2px;
-        background: #c8d0d6;
+      .m-rev-main p { margin: 0 0 0.7rem; }
+      .m-del { color: #c0563f; text-decoration: line-through; }
+      .m-pop {
+        margin: 0.2rem 0 0.7rem auto;
+        max-width: 72%;
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        background: var(--surface);
+        box-shadow: var(--shadow-md);
+        padding: 0.5rem 0.6rem;
+        font-family: var(--font-sans);
       }
-      .mk-card-bar.gold { background: var(--gold); }
-      .mk-card-bar.blue { background: var(--blue); }
-      .mk-goal {
-        height: 6px;
-        border-radius: 999px;
-        background: var(--skeleton);
-        overflow: hidden;
-      }
-      .mk-goal span {
-        display: block;
-        height: 100%;
-        background: var(--accent);
-      }
-      .mk-goal-label {
-        margin: 0.45rem 0 0;
+      .m-pop-h {
+        display: flex;
+        justify-content: space-between;
         color: var(--muted-2);
+        font-size: 0.56rem;
+        letter-spacing: 0.06em;
+      }
+      .m-pop-h span { color: #c08a45; }
+      .m-pop-d {
+        margin: 0.35rem 0;
+        padding: 0.2rem 0.4rem;
+        border-radius: 5px;
+        background: rgba(192, 86, 63, 0.1);
+        color: #c0563f;
+        text-decoration: line-through;
         font-size: 0.66rem;
       }
-      .status-bar {
+      .m-pop-a { display: flex; gap: 0.4rem; font-size: 0.62rem; font-weight: 600; }
+      .m-pop-a .ok { color: #3c9a63; }
+      .m-pop-a .no { color: #c0563f; }
+      .m-rev-side { padding: 0.7rem; background: var(--bg-soft); font-family: var(--font-sans); }
+      .m-side-h { font-weight: 700; font-size: 0.6rem; letter-spacing: 0.06em; margin-bottom: 0.5rem; }
+      .m-pass {
         display: flex;
-        gap: 1.4rem;
-        padding: 0.5rem 1rem;
-        border-top: 1px solid var(--border);
-        background: var(--bg-soft);
-        color: var(--muted-2);
-        font-size: 0.68rem;
-        letter-spacing: 0.03em;
+        align-items: center;
+        gap: 0.4rem;
+        margin-bottom: 0.4rem;
+        padding: 0.4rem 0.5rem;
+        border: 1px solid var(--border);
+        border-left: 3px solid var(--muted-2);
+        border-radius: 6px;
+        background: var(--surface);
       }
-      .status-bar span:last-child {
-        margin-left: auto;
-        color: var(--accent);
+      .m-pass.green { border-left-color: #54a574; }
+      .m-pass.orange { border-left-color: #d6924a; }
+      .m-pass b { flex: 1; font-size: 0.66rem; }
+      .m-pass small { color: var(--muted-2); font-size: 0.56rem; }
+      .m-side-sub { color: var(--muted-2); font-size: 0.56rem; letter-spacing: 0.06em; margin: 0.6rem 0 0.3rem; }
+      .m-vchips { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+      .vchip { border: 1px solid var(--border); border-radius: 999px; padding: 0.1rem 0.5rem; font-size: 0.58rem; }
+      .vchip.green { color: #3c9a63; }
+      .vchip.orange { color: #c08a45; }
+
+      /* Compile */
+      .m-comp-h {
+        padding: 0.55rem 0.8rem;
+        border-bottom: 1px solid var(--border);
+        font-weight: 600;
+        font-size: 0.74rem;
+      }
+      .m-comp-body { display: grid; grid-template-columns: 0.9fr 1.1fr 0.85fr; }
+      .m-comp-tree { padding: 0.6rem; border-right: 1px solid var(--border); color: var(--muted); }
+      .m-comp-sub { color: var(--muted-2); font-size: 0.56rem; letter-spacing: 0.06em; margin-bottom: 0.4rem; }
+      .m-comp-tree p { margin: 0.2rem 0; white-space: nowrap; font-size: 0.64rem; }
+      .m-comp-tree .i1 { padding-left: 0.7rem; }
+      .m-comp-tree .i2 { padding-left: 1.4rem; }
+      .m-comp-mid { display: grid; gap: 0.45rem; align-content: start; padding: 0.6rem; border-right: 1px solid var(--border); }
+      .m-comp-mid label { display: grid; gap: 0.15rem; color: var(--muted-2); font-size: 0.56rem; }
+      .m-comp-mid label span {
+        color: var(--text);
+        font-size: 0.66rem;
+        border: 1px solid var(--border);
+        border-radius: 5px;
+        padding: 0.25rem 0.4rem;
+        background: var(--bg-soft);
+      }
+      .m-seg { display: flex; border: 1px solid var(--border); border-radius: 6px; overflow: hidden; }
+      .m-seg span { flex: 1; text-align: center; padding: 0.25rem; color: var(--muted); font-size: 0.6rem; }
+      .m-seg .on { background: var(--accent-soft); color: var(--accent-ink); font-weight: 600; }
+      .m-comp-prev { display: grid; place-items: center; padding: 0.6rem; background: var(--bg-soft); }
+      .m-prev-page {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        width: 100%;
+        aspect-ratio: 3 / 4;
+        border: 1px solid var(--border);
+        background: var(--surface);
+        box-shadow: var(--shadow-sm);
+        text-align: center;
+      }
+      .m-prev-page .t { font-family: var(--font-serif); font-size: 0.6rem; letter-spacing: 0.08em; line-height: 1.4; }
+      .m-prev-page .by { color: var(--muted); font-size: 0.52rem; }
+      .m-comp-foot {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 0.6rem;
+        padding: 0.5rem 0.8rem;
+        border-top: 1px solid var(--border);
+      }
+      .m-comp-foot span { color: var(--muted); font-size: 0.66rem; }
+      .m-comp-go {
+        background: var(--btn-bg);
+        color: var(--btn-text) !important;
+        border-radius: 6px;
+        padding: 0.3rem 0.75rem;
         font-weight: 600;
       }
 
@@ -1109,254 +1237,6 @@ const icons = {
         font-size: 0.9rem;
         color: var(--text);
         box-shadow: var(--shadow-sm);
-      }
-
-      /* ---------- band visuals ---------- */
-      .mini {
-        position: relative;
-        border: 1px solid var(--border);
-        border-radius: var(--radius);
-        background: var(--surface);
-        box-shadow: var(--shadow-lg);
-        padding: 1.5rem;
-        min-height: 280px;
-      }
-      .mini-binder ul {
-        margin: 0.4rem 0 0;
-        padding: 0;
-        list-style: none;
-        display: grid;
-        gap: 0.4rem;
-      }
-      .mini-binder li {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0.45rem 0.7rem;
-        border-radius: 8px;
-        color: var(--muted);
-        font-size: 0.92rem;
-        border: 1px solid transparent;
-      }
-      .mini-binder li.folder {
-        color: var(--text);
-        font-weight: 600;
-      }
-      .mini-binder li.folder::before {
-        content: '▾';
-        color: var(--muted-2);
-        font-size: 0.75em;
-      }
-      .mini-binder li.doc {
-        padding-left: 1.5rem;
-      }
-      .mini-binder li.dragging {
-        background: var(--accent-soft);
-        border-color: var(--accent);
-        color: var(--accent-ink);
-        transform: translateX(6px);
-        box-shadow: var(--shadow-md);
-      }
-
-      .mini-board {
-        display: flex;
-        flex-direction: column;
-        gap: 0.9rem;
-      }
-      .board-tabs {
-        display: flex;
-        gap: 0.4rem;
-      }
-      .board-tabs .tab {
-        padding: 0.35rem 0.8rem;
-        border-radius: 999px;
-        font-size: 0.78rem;
-        color: var(--muted);
-        border: 1px solid transparent;
-      }
-      .board-tabs .tab.active {
-        color: var(--accent-ink);
-        border-color: var(--border);
-        background: var(--accent-soft);
-        font-weight: 600;
-      }
-      .board-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0.8rem;
-      }
-      .board-card {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        gap: 0.5rem 0.6rem;
-        padding: 0.8rem;
-        border: 1px solid var(--border);
-        border-radius: 10px;
-        background: var(--bg);
-      }
-      .board-card b {
-        font-size: 0.82rem;
-        font-weight: 600;
-        color: var(--text);
-      }
-      .board-card .mk-card-bar {
-        flex: 0 0 4px;
-        align-self: stretch;
-      }
-      .board-card i {
-        display: block;
-        height: 0.45rem;
-        background: var(--skeleton);
-        border-radius: 3px;
-        flex: 1 1 100%;
-      }
-      .board-card i.s {
-        flex-basis: 50%;
-      }
-      .threads {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-      }
-      .thread-chip {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.4rem;
-        padding: 0.35rem 0.7rem;
-        border: 1px solid var(--border);
-        border-radius: 999px;
-        background: var(--bg);
-        color: var(--muted);
-        font-size: 0.78rem;
-      }
-      .tdot {
-        width: 7px;
-        height: 7px;
-        border-radius: 50%;
-        background: var(--muted-2);
-        flex: none;
-      }
-      .tdot.gold {
-        background: var(--gold);
-      }
-      .tdot.blue {
-        background: var(--blue);
-      }
-
-      .mini-revise .mk-line {
-        height: 0.62rem;
-      }
-      .revise-tag {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.45rem;
-        margin-bottom: 1.1rem;
-        padding: 0.35rem 0.7rem;
-        border: 1px solid var(--border);
-        border-radius: 999px;
-        background: var(--accent-soft);
-        color: var(--accent-ink);
-        font-size: 0.74rem;
-        font-weight: 600;
-      }
-      .dot-sm {
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        background: var(--accent);
-      }
-      .revise-change {
-        font-size: 0.98rem;
-        line-height: 1.7;
-        color: var(--text);
-        margin: 0 0 0.72rem;
-      }
-      .ins {
-        color: #1f7a44;
-        border-bottom: 2px solid rgba(31, 122, 68, 0.5);
-      }
-      .del {
-        color: #b23b3b;
-        text-decoration: line-through;
-      }
-      .comment {
-        margin-top: 1.2rem;
-        margin-left: auto;
-        max-width: 78%;
-        padding: 0.75rem 0.9rem;
-        border: 1px solid var(--border);
-        border-left: 3px solid var(--gold);
-        border-radius: 8px;
-        background: var(--bg);
-        color: var(--muted);
-        font-size: 0.88rem;
-        font-style: italic;
-      }
-      .comment-who {
-        display: block;
-        margin-bottom: 0.2rem;
-        color: var(--gold);
-        font-style: normal;
-        font-weight: 700;
-        font-size: 0.72rem;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-      }
-
-      .mini-export .export-body {
-        display: grid;
-        grid-template-columns: 1.15fr 1fr;
-        gap: 1rem;
-        margin-top: 0.5rem;
-      }
-      .mini-export .page {
-        padding: 1.1rem;
-        border: 1px solid var(--border);
-        border-radius: 8px;
-        background: var(--bg);
-      }
-      .page-title {
-        font-family: var(--font-serif);
-        text-align: center;
-        font-size: 1rem;
-        margin: 0 0 1rem;
-        color: var(--text);
-      }
-      .export-formats {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-      }
-      .fmt {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0.6rem 0.8rem;
-        border: 1px solid var(--border);
-        border-radius: 8px;
-        background: var(--surface);
-        color: var(--muted);
-        font-size: 0.86rem;
-        font-weight: 600;
-      }
-      .fmt.active {
-        border-color: var(--accent);
-        background: var(--accent-soft);
-        color: var(--accent-ink);
-      }
-      .fmt-check {
-        color: var(--accent);
-      }
-      .export-cta {
-        margin-top: auto;
-        text-align: center;
-        padding: 0.6rem;
-        border-radius: 8px;
-        background: var(--btn-bg);
-        color: var(--btn-text);
-        font-size: 0.86rem;
-        font-weight: 600;
       }
 
       /* ---------- safety ---------- */
@@ -1520,14 +1400,12 @@ const icons = {
         .safety-points {
           grid-template-columns: 1fr;
         }
-        .app-body {
-          grid-template-columns: 0.9fr 1.5fr;
-        }
-        .mk-inspector {
+        /* Keep dense mockups legible on narrow screens. */
+        .m-comp-prev {
           display: none;
         }
-        .mini-export .export-body {
-          grid-template-columns: 1fr;
+        .m-comp-body {
+          grid-template-columns: 0.9fr 1.1fr;
         }
       }
 
@@ -1538,7 +1416,7 @@ const icons = {
         .cta-row .btn {
           flex: 1 1 auto;
         }
-        .board-grid {
+        .m-sgrid {
           grid-template-columns: 1fr;
         }
       }
