@@ -26,9 +26,6 @@ export default defineConfig({
       social: [{ icon: 'github', label: 'GitHub', href: SITE_REPO_URL }],
       // Surface the download link in the top-right of every page.
       head: [],
-      editLink: {
-        baseUrl: `${SITE_REPO_URL}/edit/main/`,
-      },
       sidebar: [
         {
           label: 'Start here',
@@ -68,7 +65,6 @@ export default defineConfig({
             { label: 'The Scene Board', slug: 'manual/scene-board' },
             { label: 'The Canvas', slug: 'manual/canvas' },
             { label: 'The Outliner', slug: 'manual/outliner' },
-            { label: 'Story threads & Story Lines', slug: 'manual/story-threads' },
             { label: 'Characters & POV', slug: 'manual/characters-and-pov' },
           ],
         },

@@ -50,5 +50,4 @@ The canvas isn't just cards:
 
 ---
 
-Prefer a structured, sortable layout instead? See the **[Outliner](../outliner/)**. To trace
-characters and subplots across scenes, see **[Story threads & Story Lines](../story-threads/)**.
+Prefer a structured, sortable layout instead? See the **[Outliner](../outliner/)**.

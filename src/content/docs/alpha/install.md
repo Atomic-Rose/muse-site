@@ -7,18 +7,20 @@ Welcome, and thank you for trying MUSE during its earliest testing phase. You're
 small group of writers helping shape this app before it reaches the wider public.
 
 :::tip[A promise]
-Every tester who participates in the alpha or beta receives a permanent **50% discount code**
-at the 1.0 launch, usable on your first purchase. You'll be emailed your code when the public
+Every tester who participates in the alpha or beta receives a **generous one-time discount**
+at the 1.0 launch, applied to your first purchase. You'll be emailed your code when the public
 release ships.
 :::
 
 ## Download
 
-<!-- TODO: replace this link with your real download location once releases are published.
-     The recommended setup is GitHub Releases, which hosts the installers for free. -->
-Download the latest alpha build for your operating system from the
-**[MUSE releases page](https://github.com/atomic-rose/muse-writing-app/releases/latest)**,
-then follow the steps for your platform below.
+<!-- TODO: download links are not live yet. Alpha installers will be published on this
+     site repo's GitHub Releases page (atomic-rose/muse-site). Replace the note below with
+     the real per-platform links once the first release is published. -->
+Download links are coming soon. Alpha builds will be published on the
+**[MUSE releases page](https://github.com/atomic-rose/muse-site/releases/latest)** — once
+they're live, download the build for your operating system and follow the steps for your
+platform below.
 
 Because MUSE is in private alpha, builds are signed on some platforms and unsigned on others.
 If your operating system shows a warning, the steps below explain exactly what to click.

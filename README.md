@@ -1,59 +1,52 @@
-# muse-site
+# MUSE
 
-The marketing landing page and user manual for **MUSE** — built with
-[Astro](https://astro.build/) + [Starlight](https://starlight.astro.build/).
+**A calm, single-file writing studio for people who write long things.**
 
-It is a fully static site: no server, no database. It is configured for GitHub Pages at
-`https://atomic-rose.github.io/muse-site/`. App installers themselves are hosted separately
-on GitHub Releases.
+MUSE (Manuscript Unified Studio Environment) is a desktop writing app for novelists,
+screenwriters, and researchers. It combines Scrivener-style project organization with a
+modern editor and a complete review workflow — and every project lives in a single `.muse`
+file on your own computer. No cloud account, nothing uploaded.
 
-## Local development
+### [Read the docs & user manual](https://atomic-rose.github.io/muse-site/)
 
-```bash
-npm install      # first time only
-npm run dev      # start the dev server at http://localhost:4321
-npm run build    # build the static site into ./dist
-npm run preview  # preview the production build locally
-```
+### [Download the latest alpha build](https://github.com/atomic-rose/muse-site/releases/latest)
 
-> Requires Node 20+. This project was scaffolded by hand, so the first
-> `npm install` resolves the exact dependency versions.
+> _Download links are coming soon — alpha builds will be published on this repository's
+> [Releases](https://github.com/atomic-rose/muse-site/releases) page._
+>
+> Available for **macOS, Windows, and Linux**. See the
+> [Install & first launch guide](https://atomic-rose.github.io/muse-site/alpha/install/)
+> for step-by-step setup on each platform.
 
-## Project structure
+---
 
-```text
-muse-site/
-├── astro.config.mjs            # site config, sidebar, branding
-├── src/
-│   ├── content.config.ts       # Starlight content collection
-│   ├── styles/custom.css       # MUSE brand palette
-│   ├── assets/muse-logo.svg    # logo (mirrors ../branding/muse-logo.svg)
-│   └── content/docs/
-│       ├── index.mdx           # landing page (splash hero)
-│       ├── manual/             # the user manual
-│       ├── alpha/              # alpha tester guides
-│       └── privacy.md          # privacy page
-└── public/favicon.svg
-```
+## What you can do with MUSE
 
-Content is plain Markdown / MDX. To edit the manual, edit the files under
-`src/content/docs/` — the sidebar is defined in `astro.config.mjs`.
+- **Organize a whole book.** A binder tree holds chapters, scenes, characters, places, and
+  research side by side. Tag documents with labels, statuses, and your own custom metadata.
+- **Plan visually.** The Scene Board gives you seven views of your project — Scenes,
+  Freeform, Organize, Canvas, Structure, Timeline, and Connections.
+- **Draft comfortably.** A rich editor built for very large documents, with focus mode,
+  typewriter scrolling, wikilinks between documents, and live spelling and grammar suggestions.
+- **Revise thoroughly.** Track changes with suggesting mode, group edits into named revision
+  passes, leave anchored comments, and take snapshots you can return to.
+- **Compile and export.** Assemble selected documents into a finished manuscript and export
+  to DOCX (with tracked changes), PDF, or Markdown.
 
-## Deployment
+## What makes it different
 
-This repository deploys to GitHub Pages from `.github/workflows/deploy.yml`.
+- **One file, on your computer.** Each project is a single `.muse` file (a SQLite database).
+  Nothing syncs, nothing uploads — which avoids the corruption that plagues file-and-folder
+  writing setups.
+- **Built for big manuscripts.** The editor stays responsive on 80,000-word documents and beyond.
+- **Trust first.** Automatic backups, version snapshots, and crash-recovery drafts mean you
+  never have to worry about losing your work.
 
-For the temporary GitHub Project Pages URL, `astro.config.mjs` uses:
+> **MUSE is in private alpha.** It's feature-rich but still early — expect occasional bugs
+> and interface details that will change. During alpha, please don't make MUSE the only home
+> for irreplaceable work; always keep copies of anything you can't afford to lose.
 
-- `site: 'https://atomic-rose.github.io'`
-- `base: '/muse-site/'`
+---
 
-When moving to a custom domain later, set `SITE` to the custom domain and remove
-`BASE_PATH` from `astro.config.mjs`.
-
-Every push to `main` will rebuild and redeploy automatically.
-
-## Keeping content in sync with the app
-
-Several pages were seeded from the app repo's `ALPHA_TESTERS.md`, `PRIVACY.md`, and
-`branding/`. When those change materially, update the corresponding pages here.
+Learn more and read the full user manual at
+**[atomic-rose.github.io/muse-site](https://atomic-rose.github.io/muse-site/)**.

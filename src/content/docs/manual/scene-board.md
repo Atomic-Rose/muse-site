@@ -43,7 +43,6 @@ Open the **View** popover to narrow what the board shows. You can filter by:
 - **Compile inclusion** (included / excluded)
 - **Custom metadata** values
 - **Revision** state (for example, items in the active pass, or with open comments)
-- **Story thread**
 
 Active filters are summarized on the View button, so you always know how much you've
 narrowed the board.
@@ -63,8 +62,6 @@ Signals are opt-in and stay out of the way until you ask for them.
 
 A **lens** overlays story information on top of your cards:
 
-- **[Story threads](../story-threads/)** — see which characters, subplots, and payoffs run
-  through each scene.
 - **[Characters](../characters-and-pov/)** — focus on point of view and who appears where.
 
 ## Saved views

@@ -4,9 +4,8 @@ description: Manage characters, point of view, and profiles, and see who appears
 ---
 
 The **Characters** view is a workspace for the people in your story — their point of view,
-their profiles, and the scenes they appear in. Characters are a special kind of
-[story thread](../story-threads/), so everything you tag here also feeds the Scene Board and
-Story Lines.
+their profiles, and the scenes they appear in. Everything you tag here feeds the Scene Board,
+so you can see your cast across the whole manuscript.
 
 :::note[Evolving during the alpha]
 The Characters workspace and point-of-view tools are actively being developed. The ideas
@@ -17,8 +16,7 @@ here are stable; specific controls may change between alpha builds.
 
 Open **Characters** from the editor's view switcher to see your cast in one place. From here
 you can add a new character, open a character's profile, and see how each one moves through
-the manuscript. Each character is backed by a thread, so its color and status are shared
-everywhere it appears.
+the manuscript. Each character carries its own color and status, shared everywhere it appears.
 
 ## Point of view
 
@@ -41,8 +39,3 @@ For any scene you can record **which characters appear** in it, and optionally t
 one plays. That participation drives the Characters lens on the Scene Board, so you can answer
 questions like "which scenes is this character actually in?" or "where do these two finally
 meet?" at a glance.
-
----
-
-Characters are one thread type among several — see **[Story threads & Story Lines](../story-threads/)**
-for subplots, clues, themes, and promise-and-payoff tracking.

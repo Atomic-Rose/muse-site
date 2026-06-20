@@ -5,7 +5,7 @@ description: An overview of MUSE — a desktop writing app for novelists, screen
 
 MUSE (Manuscript Unified Studio Environment) is a desktop writing application for people
 who write long things: novelists, screenwriters, and researchers. It combines
-Scrivener-style project organization with a modern editor, single-file `.muse` projects,
+project organization with a modern editor, single-file `.muse` projects,
 and a complete review workflow.
 
 The goal is an app that feels **calm, trustworthy, and focused** — somewhere you can keep
@@ -37,7 +37,7 @@ an entire book and actually enjoy working in it.
 - **Trust first.** An automatic backup system, version snapshots, and crash-recovery drafts
   exist so you never have to worry about losing your work.
 
-## What MUSE is *not* (yet)
+## What MUSE is _not_ (yet)
 
 MUSE is in **private alpha**. It is feature-rich but still early: expect occasional bugs and
 interface details that will change. During alpha, please don't make MUSE the only home for
