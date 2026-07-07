@@ -38,6 +38,7 @@ gh release create v0.1.0-alpha.1 `
   .\release-assets\v0.1.0-alpha.1\MUSE_0.1.0_amd64.deb `
   .\release-assets\v0.1.0-alpha.1\MUSE-0.1.0-1.x86_64.rpm `
   .\release-assets\v0.1.0-alpha.1\MUSE_0.1.0_x64-setup.exe `
+  .\release-assets\v0.1.0-alpha.1\MUSE_0.1.0_aarch64.dmg `
   .\release-assets\v0.1.0-alpha.1\MUSE_0.1.0_x64.dmg `
   .\release-assets\v0.1.0-alpha.1\SHA256SUMS.txt `
   --title "MUSE v0.1.0 Alpha 1" `

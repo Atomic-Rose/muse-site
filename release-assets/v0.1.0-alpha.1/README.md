@@ -8,6 +8,7 @@ Expected files:
 MUSE_0.1.0_amd64.deb
 MUSE-0.1.0-1.x86_64.rpm
 MUSE_0.1.0_x64-setup.exe
+MUSE_0.1.0_aarch64.dmg
 MUSE_0.1.0_x64.dmg
 ```
 
