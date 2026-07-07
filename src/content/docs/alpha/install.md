@@ -62,18 +62,37 @@ certificate is in place.
 
 ## Linux
 
-1. Download the `.AppImage` file.
-2. Make it executable:
-   ```bash
-   chmod +x MUSE_*.AppImage
-   ```
-3. Double-click to run, or from the terminal:
-   ```bash
-   ./MUSE_*.AppImage
-   ```
+MUSE ships as a **`.deb`** package for Ubuntu/Debian and an **`.rpm`** package for
+Fedora/RHEL. Download the one that matches your distribution.
 
-On some distributions you may need FUSE installed
-(`sudo apt install libfuse2` on Ubuntu/Debian, `sudo dnf install fuse` on Fedora).
+### Ubuntu / Debian (`.deb`)
+
+Open a terminal in the folder where you downloaded the file and run:
+
+```bash
+sudo apt install ./muse_*.deb
+```
+
+The leading `./` matters — it tells `apt` to install the local file and pull in any
+dependencies it needs. Once it finishes, launch MUSE from your applications menu or by
+running `muse` in a terminal.
+
+- **To update later:** download the newer `.deb` and run the same command.
+- **To uninstall:** `sudo apt remove muse`
+
+### Fedora / RHEL (`.rpm`)
+
+Open a terminal in the folder where you downloaded the file and run:
+
+```bash
+sudo dnf install ./muse-*.rpm
+```
+
+On older systems that don't have `dnf`, use `sudo yum install ./muse-*.rpm` instead. Once it
+finishes, launch MUSE from your applications menu or by running `muse` in a terminal.
+
+- **To update later:** download the newer `.rpm` and run the same command.
+- **To uninstall:** `sudo dnf remove muse`
 
 ## First launch
 
