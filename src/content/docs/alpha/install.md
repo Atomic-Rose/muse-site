@@ -16,7 +16,8 @@ release ships.
 
 Download the current alpha build for your operating system:
 
-- **macOS:** [MUSE_0.1.0_x64.dmg](https://github.com/Atomic-Rose/muse-site/releases/download/v0.1.0-alpha.1/MUSE_0.1.0_x64.dmg)
+- **macOS Apple Silicon:** [MUSE_0.1.0_aarch64.dmg](https://github.com/Atomic-Rose/muse-site/releases/download/v0.1.0-alpha.1/MUSE_0.1.0_aarch64.dmg)
+- **macOS Intel:** [MUSE_0.1.0_x64.dmg](https://github.com/Atomic-Rose/muse-site/releases/download/v0.1.0-alpha.1/MUSE_0.1.0_x64.dmg)
 - **Windows:** [MUSE_0.1.0_x64-setup.exe](https://github.com/Atomic-Rose/muse-site/releases/download/v0.1.0-alpha.1/MUSE_0.1.0_x64-setup.exe)
 - **Ubuntu / Debian:** [MUSE_0.1.0_amd64.deb](https://github.com/Atomic-Rose/muse-site/releases/download/v0.1.0-alpha.1/MUSE_0.1.0_amd64.deb)
 - **Fedora / RHEL:** [MUSE-0.1.0-1.x86_64.rpm](https://github.com/Atomic-Rose/muse-site/releases/download/v0.1.0-alpha.1/MUSE-0.1.0-1.x86_64.rpm)
@@ -30,7 +31,9 @@ If your operating system shows a warning, the steps below explain exactly what t
 
 ## macOS
 
-1. Download the `.dmg` file (it works on both Apple Silicon and Intel Macs).
+1. Download the `.dmg` file for your Mac:
+   - Apple Silicon Macs: `MUSE_0.1.0_aarch64.dmg`
+   - Intel Macs: `MUSE_0.1.0_x64.dmg`
 2. Double-click the `.dmg` to open it.
 3. Drag the **MUSE** icon into your **Applications** folder.
 4. Eject the disk image.
@@ -95,7 +98,7 @@ sudo apt install -f
 ```
 
 - **To update later:** download the newer `.deb` and run the same command.
-- **To uninstall:** `sudo apt remove muse`
+- **To uninstall:** `sudo apt remove muse-writer`
 
 ### Fedora / RHEL (`.rpm`)
 
@@ -121,7 +124,7 @@ sudo yum install ./MUSE-0.1.0-1.x86_64.rpm
 Once it finishes, launch MUSE from your applications menu or by running `muse` in a terminal.
 
 - **To update later:** download the newer `.rpm` and run the same command.
-- **To uninstall:** `sudo dnf remove muse`
+- **To uninstall:** `sudo dnf remove muse-writer`
 
 ## First launch
 

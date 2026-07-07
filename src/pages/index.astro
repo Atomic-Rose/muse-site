@@ -5,9 +5,10 @@ import logo from '../assets/muse-logo.svg';
 
 const base = import.meta.env.BASE_URL; // "/muse-site/"
 const GITHUB = 'https://github.com/atomic-rose/muse-site';
+const RELEASE = 'https://github.com/Atomic-Rose/muse-site/releases/tag/v0.1.0-alpha.1';
 
 const href = {
-  download: `${base}alpha/install/`,
+  download: RELEASE,
   manual: `${base}manual/getting-started/`,
   whatIsMuse: `${base}manual/what-is-muse/`,
   install: `${base}alpha/install/`,
@@ -18,9 +19,9 @@ const href = {
 const nav = [
   { label: 'Features', href: '#features' },
   { label: 'Safety', href: '#safety' },
-  { label: 'Download', href: href.download },
+  { label: 'Download', href: href.download, external: true },
   { label: 'Manual', href: href.manual },
-  { label: 'GitHub', href: href.github },
+  { label: 'GitHub', href: href.github, external: true },
 ];
 
 const trust = [
@@ -100,7 +101,7 @@ const icons = {
                 <li>
                   <a
                     href={item.href}
-                    {...(item.label === 'GitHub'
+                    {...(item.external
                       ? { rel: 'noopener', target: '_blank' }
                       : {})}
                   >
@@ -120,7 +121,7 @@ const icons = {
             <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8Z"/></svg>
             <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
           </button>
-          <a class="btn btn-primary btn-sm nav-cta" href={href.download}>Download</a>
+          <a class="btn btn-primary btn-sm nav-cta" href={href.download} rel="noopener" target="_blank">Download</a>
         </nav>
       </div>
     </header>
@@ -140,7 +141,7 @@ const icons = {
               built to help you plan, draft, revise, and export a manuscript.
             </p>
             <div class="cta-row">
-              <a class="btn btn-primary" href={href.download}>Download the alpha</a>
+              <a class="btn btn-primary" href={href.download} rel="noopener" target="_blank">Download the alpha</a>
               <a class="btn btn-ghost" href={href.manual}>Read the manual</a>
             </div>
             <p class="platforms">Windows 11 · macOS · Linux · Private alpha</p>
@@ -417,7 +418,7 @@ const icons = {
               a <strong>generous one-time discount</strong> at launch.
             </p>
             <div class="cta-row center">
-              <a class="btn btn-primary" href={href.download}>Download the alpha</a>
+              <a class="btn btn-primary" href={href.download} rel="noopener" target="_blank">Download the alpha</a>
               <a class="btn btn-ghost" href={href.install}>Read install instructions</a>
             </div>
           </div>

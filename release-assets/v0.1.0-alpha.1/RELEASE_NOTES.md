@@ -5,7 +5,8 @@ This is the first private alpha build of MUSE.
 ## Installers
 
 - Windows: `MUSE_0.1.0_x64-setup.exe`
-- macOS: `MUSE_0.1.0_x64.dmg`
+- macOS Apple Silicon: `MUSE_0.1.0_aarch64.dmg`
+- macOS Intel: `MUSE_0.1.0_x64.dmg`
 - Linux Debian/Ubuntu: `MUSE_0.1.0_amd64.deb`
 - Linux Fedora/RHEL: `MUSE-0.1.0-1.x86_64.rpm`
 
