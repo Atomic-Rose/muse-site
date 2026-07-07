@@ -1,5 +1,12 @@
 # build output
 dist/
+release-assets/**/*.deb
+release-assets/**/*.rpm
+release-assets/**/*.exe
+release-assets/**/*.dmg
+release-assets/**/*.msi
+release-assets/**/*.zip
+release-assets/**/*.AppImage
 # generated types
 .astro/
 # dependencies
