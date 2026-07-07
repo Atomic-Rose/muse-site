@@ -62,11 +62,24 @@ const icons = {
       // Set the theme before paint to avoid a flash of the wrong theme.
       (function () {
         try {
-          var stored = localStorage.getItem('muse-theme');
+          var starlightStored = localStorage.getItem('starlight-theme');
+          var museStored = localStorage.getItem('muse-theme');
+          var stored =
+            starlightStored === 'dark' || starlightStored === 'light'
+              ? starlightStored
+              : starlightStored === ''
+                ? null
+                : museStored;
           var theme =
             stored ||
             (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
           document.documentElement.dataset.theme = theme;
+          if (
+            starlightStored === null &&
+            (museStored === 'dark' || museStored === 'light')
+          ) {
+            localStorage.setItem('starlight-theme', museStored);
+          }
         } catch (e) {}
       })();
     </script>
@@ -1439,6 +1452,7 @@ const icons = {
           var next = dark ? 'light' : 'dark';
           document.documentElement.dataset.theme = next;
           try {
+            localStorage.setItem('starlight-theme', next);
             localStorage.setItem('muse-theme', next);
           } catch (e) {}
           sync();

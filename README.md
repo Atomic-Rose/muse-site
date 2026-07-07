@@ -9,11 +9,8 @@ file on your own computer. No cloud account, nothing uploaded.
 
 ### [Read the docs & user manual](https://atomic-rose.github.io/muse-site/)
 
-### [Download the latest alpha build](https://github.com/atomic-rose/muse-site/releases/latest)
+### [Download MUSE v0.1.0 Alpha 1](https://github.com/Atomic-Rose/muse-site/releases/tag/v0.1.0-alpha.1)
 
-> _Download links are coming soon — alpha builds will be published on this repository's
-> [Releases](https://github.com/atomic-rose/muse-site/releases) page._
->
 > Available for **macOS, Windows, and Linux**. See the
 > [Install & first launch guide](https://atomic-rose.github.io/muse-site/alpha/install/)
 > for step-by-step setup on each platform.
