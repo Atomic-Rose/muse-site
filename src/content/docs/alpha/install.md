@@ -16,8 +16,7 @@ release ships.
 
 Download the current alpha build for your operating system:
 
-- **macOS Apple Silicon:** [MUSE_0.1.0_aarch64.dmg](https://github.com/Atomic-Rose/muse-site/releases/download/v0.1.0-alpha.1/MUSE_0.1.0_aarch64.dmg)
-- **macOS Intel:** [MUSE_0.1.0_x64.dmg](https://github.com/Atomic-Rose/muse-site/releases/download/v0.1.0-alpha.1/MUSE_0.1.0_x64.dmg)
+- **macOS:** [MUSE_0.1.0_x64.dmg](https://github.com/Atomic-Rose/muse-site/releases/download/v0.1.0-alpha.1/MUSE_0.1.0_x64.dmg)
 - **Windows:** [MUSE_0.1.0_x64-setup.exe](https://github.com/Atomic-Rose/muse-site/releases/download/v0.1.0-alpha.1/MUSE_0.1.0_x64-setup.exe)
 - **Ubuntu / Debian:** [MUSE_0.1.0_amd64.deb](https://github.com/Atomic-Rose/muse-site/releases/download/v0.1.0-alpha.1/MUSE_0.1.0_amd64.deb)
 - **Fedora / RHEL:** [MUSE-0.1.0-1.x86_64.rpm](https://github.com/Atomic-Rose/muse-site/releases/download/v0.1.0-alpha.1/MUSE-0.1.0-1.x86_64.rpm)
@@ -31,13 +30,13 @@ If your operating system shows a warning, the steps below explain exactly what t
 
 ## macOS
 
-1. Download the `.dmg` file for your Mac:
-   - Apple Silicon Macs: `MUSE_0.1.0_aarch64.dmg`
-   - Intel Macs: `MUSE_0.1.0_x64.dmg`
+1. Download `MUSE_0.1.0_x64.dmg`.
 2. Double-click the `.dmg` to open it.
 3. Drag the **MUSE** icon into your **Applications** folder.
 4. Eject the disk image.
 5. Open **Applications** and double-click MUSE.
+
+This alpha macOS build is packaged for Intel Macs. Apple Silicon users may need Rosetta 2.
 
 **If you see "MUSE cannot be opened because the developer cannot be verified":**
 
