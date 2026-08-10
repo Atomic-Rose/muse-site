@@ -2,10 +2,13 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-// GitHub Project Pages deploys at https://atomic-rose.github.io/muse-site/.
-// When moving to a custom domain, set SITE to that domain and remove BASE_PATH.
-const SITE = 'https://atomic-rose.github.io';
-const BASE_PATH = '/muse-site/';
+// Served from a custom domain at the root, so there is no base path. Pages are
+// still built and deployed by GitHub Pages; only the address changed.
+//
+// Do not merge this ahead of DNS. Until muse.lunareos.com resolves, building
+// with an empty base breaks every asset URL on the github.io address.
+const SITE = 'https://muse.lunareos.com';
+const BASE_PATH = '/';
 
 const SITE_REPO_URL = 'https://github.com/atomic-rose/muse-site';
 
