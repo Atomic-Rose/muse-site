@@ -132,13 +132,16 @@ export default defineConfig({
             { label: 'Backups', slug: 'manual/backups-and-safety' },
             { label: 'Restore & Safety Ledger', slug: 'manual/restore-and-safety-ledger' },
             { label: 'Crash recovery', slug: 'manual/crash-recovery' },
-            { label: 'Privacy', slug: 'privacy' },
+            { label: 'Privacy Policy', slug: 'privacy' },
           ],
         },
         {
           label: 'Reference',
           items: [
             { label: 'Glossary', slug: 'manual/glossary' },
+            // Linked from the App Store listing as the app's Support URL, so
+            // this page must stay reachable at a stable address.
+            { label: 'Support', slug: 'support' },
           ],
         },
         {

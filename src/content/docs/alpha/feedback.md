@@ -9,11 +9,9 @@ rest of the world will see at 1.0.
 
 ## Where to report
 
-<!-- TODO: confirm your official feedback channel(s) and update this section.
-     The distribution strategy notes this is likely GitHub Issues plus a private
-     email or Discord. -->
-The best place to report issues is the project's **GitHub Issues** page. If you were given a
-private email or chat channel with your build, you can use that too.
+Email **support@lunareos.com**. That is the channel we monitor, and it reaches us whichever
+platform you are on. If you were given a private chat channel with your build, you can use
+that too.
 
 ## What to include in a bug report
 
