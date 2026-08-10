@@ -7,12 +7,12 @@ screenwriters, and researchers. It combines Scrivener-style project organization
 modern editor and a complete review workflow — and every project lives in a single `.muse`
 file on your own computer. No cloud account, nothing uploaded.
 
-### [Read the docs & user manual](https://atomic-rose.github.io/muse-site/)
+### [Read the docs & user manual](https://muse.lunareos.com/)
 
 ### [Download MUSE v0.1.0 Alpha 1](https://github.com/Atomic-Rose/muse-site/releases/tag/v0.1.0-alpha.1)
 
 > Available for **macOS, Windows, and Linux**. See the
-> [Install & first launch guide](https://atomic-rose.github.io/muse-site/alpha/install/)
+> [Install & first launch guide](https://muse.lunareos.com/alpha/install/)
 > for step-by-step setup on each platform.
 
 ---
@@ -46,4 +46,4 @@ file on your own computer. No cloud account, nothing uploaded.
 ---
 
 Learn more and read the full user manual at
-**[atomic-rose.github.io/muse-site](https://atomic-rose.github.io/muse-site/)**.
+**[muse.lunareos.com](https://muse.lunareos.com/)**.
