@@ -26,8 +26,9 @@ You can also view the full
 **[MUSE v0.1.0 Alpha 1 release](https://github.com/Atomic-Rose/muse-site/releases/tag/v0.1.0-alpha.1)**
 and download `SHA256SUMS.txt` if you want to verify the installers.
 
-Because MUSE is in private alpha, builds are signed on some platforms and unsigned on others.
-If your operating system shows a warning, the steps below explain exactly what to click.
+The Apple Silicon Mac installer is signed with an Apple Developer ID and notarized by Apple.
+If you downloaded an earlier Apple Silicon build, download the `.dmg` again to get the notarized installer.
+Windows and Intel Mac builds may still show code-signing warnings; see the steps below.
 
 ## macOS
 
@@ -41,7 +42,10 @@ If your operating system shows a warning, the steps below explain exactly what t
 
 **If you see "MUSE cannot be opened because the developer cannot be verified":**
 
-This build isn't yet signed with an Apple Developer ID. To open it once:
+For Apple Silicon, download the current notarized installer above and reinstall MUSE.
+If the warning persists, please [report the installation problem](/alpha/feedback/).
+
+For the older Intel Mac alpha build, you may need to open it once using these steps:
 
 1. Right-click (or Control-click) the MUSE app in Applications.
 2. Choose **Open** from the menu.

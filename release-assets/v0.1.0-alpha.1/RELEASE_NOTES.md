@@ -2,6 +2,12 @@
 
 This is the first private alpha build of MUSE.
 
+## Apple Silicon installer update
+
+The Apple Silicon installer is now signed with an Apple Developer ID and notarized by Apple.
+Download `MUSE_0.1.0_aarch64.dmg` again if you previously downloaded the older build.
+The Intel Mac installer is a separate build and has not been updated.
+
 ## Installers
 
 - Windows: `MUSE_0.1.0_x64-setup.exe`
@@ -13,7 +19,7 @@ This is the first private alpha build of MUSE.
 ## Notes for testers
 
 - MUSE is still in alpha. Please keep backups of important writing.
-- Windows and macOS may show warnings if the builds are not yet code-signed.
+- The Apple Silicon Mac installer is signed and notarized. Windows and Intel Mac builds may still show code-signing warnings.
 - Please report installation problems and first-launch issues through the alpha feedback link.
 
 ## Known issues
