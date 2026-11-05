@@ -1,12 +1,13 @@
 ---
 title: Privacy Policy
-description: How MUSE handles your data — what stays on your device, and the few optional features that make network requests.
+description: How the offline MUSE application and optional website tester registration handle information.
 ---
 
-**Last updated: 10 August 2026**
+**Last updated: 5 November 2026**
 
-The short version: **your manuscript stays on your device.** MUSE has no accounts and no
-servers. We cannot read what you write, because it is never sent to us.
+The short version: **your manuscript stays on your device.** The MUSE application does not
+require an account or upload your manuscripts. Optional website tester registration is
+separate from the offline application and is described below.
 
 ## Summary
 
@@ -16,8 +17,35 @@ servers. We cannot read what you write, because it is never sent to us.
 - MUSE does **not** upload your manuscript text in the background.
 - A few **optional** features make network requests. Every one is listed below.
 
-We collect no data, so there is nothing for us to sell, share, or hand over. There is no
-account to delete, because there is no account.
+The offline application does not collect your manuscript or usage telemetry. Website
+registration, when available, involves the information you choose to submit.
+
+## Website tester registration
+
+Tester registration is not open yet. The registration page currently has no active form
+and collects no registration information. The following describes the intended registration
+service before it is enabled.
+
+Lunareos LLC plans to use Brevo to collect and store your email address, optional name,
+platform interests, and selected email topics: testing invitations, relevant build
+announcements, and general product news. These details would be used to manage testing
+interest and send the communications you choose. Confirmation and consent records would
+document your request and email confirmation. Registration would not create an account
+required to use MUSE, and would not include manuscript uploads or cloud sync.
+
+The hosted form and its bot protection would involve requests to Brevo and its configured
+CAPTCHA provider. The final provider configuration and retention details will be described
+here before registration opens.
+
+Stopping emails, leaving testing, and requesting deletion are different actions. Once email
+registration is enabled, unsubscribe links will stop registration-related emails. Contact
+**support@lunareos.com** to request departure from testing, or **privacy@lunareos.com** to
+request deletion of registration information. There is no self-service departure or deletion
+portal. We may need to verify that a request concerns your address.
+
+Before registration opens, this notice will explain how long registration and consent
+records are retained and whether limited suppression information is kept to prevent
+accidental future mailings. No specific retention period has been established in this notice.
 
 ## What's stored locally
 
@@ -78,8 +106,8 @@ with a problem, that is a deliberate act on your part, and you can read the cont
 
 ## Children
 
-MUSE is a general-purpose writing tool. It is not directed at children and does not
-knowingly collect information from anyone, of any age.
+MUSE is a general-purpose writing tool and is not directed at children. The offline
+application does not collect personal information. Website registration is described above.
 
 ## Changes to this policy
 

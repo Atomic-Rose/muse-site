@@ -13,6 +13,7 @@ const href = {
   whatIsMuse: `${base}manual/what-is-muse/`,
   install: `${base}alpha/install/`,
   privacy: `${base}privacy/`,
+  testers: `${base}testers/`,
   github: GITHUB,
 };
 
@@ -115,7 +116,7 @@ const icons = {
             type="button"
             class="theme-toggle"
             id="theme-toggle"
-            aria-label="Switch to dark theme"
+            aria-label="Dark theme"
             aria-pressed="false"
           >
             <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.6 6.6 0 0 0 9.8 9.8Z"/></svg>
@@ -126,7 +127,7 @@ const icons = {
       </div>
     </header>
 
-    <main id="main">
+    <main id="main" tabindex="-1">
       <!-- HERO -->
       <section class="hero" aria-labelledby="hero-heading">
         <div class="wrap hero-grid">
@@ -420,6 +421,7 @@ const icons = {
             <div class="cta-row center">
               <a class="btn btn-primary" href={href.download} rel="noopener" target="_blank">Download the alpha</a>
               <a class="btn btn-ghost" href={href.install}>Read install instructions</a>
+              <a class="btn btn-ghost" href={href.testers}>Join the testing program</a>
             </div>
           </div>
         </div>
@@ -452,7 +454,7 @@ const icons = {
         --surface: #ffffff;
         --text: #1c2a33;
         --muted: #586771;
-        --muted-2: #8b949b;
+        --muted-2: #5e6b75;
         --border: #e7e2d7;
         --border-soft: #eee9df;
 
@@ -489,7 +491,7 @@ const icons = {
         --surface: #18222a;
         --text: #eef2f4;
         --muted: #a6b2ba;
-        --muted-2: #74828b;
+        --muted-2: #97a6b0;
         --border: #2a3640;
         --border-soft: #232e37;
 
@@ -517,13 +519,13 @@ const icons = {
 
       html {
         scroll-behavior: smooth;
+        scroll-padding-block-start: 6rem;
       }
 
       html,
       body {
         margin: 0;
         max-width: 100%;
-        overflow-x: hidden;
       }
 
       body {
@@ -532,6 +534,7 @@ const icons = {
         font-family: var(--font-sans);
         font-size: 1.06rem;
         line-height: 1.7;
+        overflow-wrap: anywhere;
         -webkit-font-smoothing: antialiased;
         text-rendering: optimizeLegibility;
       }
@@ -547,7 +550,7 @@ const icons = {
       }
 
       :focus-visible {
-        outline: 2px solid var(--accent);
+        outline: 3px solid var(--accent);
         outline-offset: 3px;
         border-radius: 4px;
       }
@@ -647,7 +650,9 @@ const icons = {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 64px;
+        min-height: 64px;
+        padding-block: 0.5rem;
+        gap: 1rem;
       }
   
       .brand img {
@@ -674,6 +679,10 @@ const icons = {
         list-style: none;
       }
       .primary-nav ul a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
+        min-width: 24px;
         color: var(--muted);
         font-size: 0.95rem;
         font-weight: 500;
@@ -693,8 +702,9 @@ const icons = {
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        width: 38px;
-        height: 38px;
+        width: 44px;
+        height: 44px;
+        flex-shrink: 0;
         padding: 0;
         border: 1px solid var(--border);
         border-radius: 9px;
@@ -1369,6 +1379,9 @@ const icons = {
         gap: 1.4rem;
       }
       .footer-nav a {
+        display: inline-flex;
+        align-items: center;
+        min-height: 44px;
         color: var(--muted);
         font-size: 0.95rem;
       }
@@ -1383,7 +1396,35 @@ const icons = {
       }
 
       /* ---------- responsive ---------- */
+      .hero-grid > *,
+      .band-grid > *,
+      .trust-strip > * {
+        min-width: 0;
+      }
+
+      /* A static, wrapping header preserves navigation at narrow widths and zoom. */
+      @media (max-width: 900px), (max-height: 600px) {
+        .site-header {
+          position: static;
+        }
+        .header-inner,
+        .primary-nav,
+        .primary-nav ul {
+          flex-wrap: wrap;
+        }
+        .primary-nav {
+          gap: 0.5rem 1rem;
+        }
+        .primary-nav ul {
+          gap: 0.25rem 1rem;
+        }
+      }
+
       @media (max-width: 900px) {
+        .primary-nav,
+        .primary-nav ul {
+          width: 100%;
+        }
         .hero-grid {
           grid-template-columns: 1fr;
         }
@@ -1406,9 +1447,6 @@ const icons = {
       }
 
       @media (max-width: 680px) {
-        .primary-nav ul {
-          display: none;
-        }
         .safety-points {
           grid-template-columns: 1fr;
         }
@@ -1442,10 +1480,6 @@ const icons = {
         function sync() {
           var dark = document.documentElement.dataset.theme === 'dark';
           btn.setAttribute('aria-pressed', String(dark));
-          btn.setAttribute(
-            'aria-label',
-            dark ? 'Switch to light theme' : 'Switch to dark theme'
-          );
         }
         sync();
         btn.addEventListener('click', function () {

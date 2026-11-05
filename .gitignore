@@ -1,5 +1,11 @@
-# build output
+# Build output and generated caches
 dist/
+.astro/
+.cache/
+.vite/
+*.tsbuildinfo
+
+# Locally staged installers (keep release notes and checksums trackable)
 release-assets/**/*.deb
 release-assets/**/*.rpm
 release-assets/**/*.exe
@@ -7,17 +13,90 @@ release-assets/**/*.dmg
 release-assets/**/*.msi
 release-assets/**/*.zip
 release-assets/**/*.AppImage
-# generated types
-.astro/
-# dependencies
+release-assets/**/*.pkg
+release-assets/**/*.msix
+release-assets/**/*.msixbundle
+release-assets/**/*.tar.gz
+release-assets/**/*.tar.xz
+
+# Dependencies
 node_modules/
-# logs
+
+# Logs and diagnostic output
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-# environment variables
-.env
-.env.production
-# macOS
+.pnpm-debug.log*
+logs/
+*.pid
+*.pid.lock
+
+# Environment files, including nested/local variants.
+# Only placeholder examples may be committed; never put real values in examples.
+.env*
+!.env.example
+!.env.*.example
+
+# Local credentials and private key material
+.npmrc
+.netrc
+.aws/
+.ssh/
+.gnupg/
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+credentials.json
+service-account*.json
+
+# Private operational data: keep exports here, outside src/ and public/.
+# Ignoring a file does not stop a build from copying it into the deployed site.
+/private/
+/local-data/
+/subscriber-exports/
+/brevo-exports/
+# Also catch clearly named subscriber/contact exports outside those directories.
+subscriber-export*.csv
+subscriber-export*.json
+contact-export*.csv
+contact-export*.json
+brevo-export*.csv
+brevo-export*.json
+
+# Local manuscripts and database copies (never website assets)
+*.muse
+*.sqlite
+*.sqlite3
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3-wal
+*.sqlite3-shm
+
+# Test reports and coverage
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+
+# Local editor settings, backups, and scratch files
+.idea/
+.vscode/
+.history/
+*.swp
+*.swo
+*~
+*.bak
+/tmp/
+/temp/
+
+# macOS and Windows metadata
 .DS_Store
+._*
+.Spotlight-V100/
+.Trashes/
+Thumbs.db
+Desktop.ini

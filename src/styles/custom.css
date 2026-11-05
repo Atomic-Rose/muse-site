@@ -60,3 +60,19 @@
 .sl-markdown-content h1 {
   font-weight: 600;
 }
+
+/* Keep focus distinct on docs and the registration page in either theme. */
+:focus-visible {
+  outline: 3px solid var(--sl-color-text-accent);
+  outline-offset: 3px;
+}
+
+.sl-markdown-content {
+  overflow-wrap: anywhere;
+}
+
+@media (forced-colors: active) {
+  :focus-visible {
+    outline-color: Highlight;
+  }
+}

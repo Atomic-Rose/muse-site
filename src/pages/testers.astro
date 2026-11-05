@@ -1,0 +1,28 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import TesterSignup from '../components/TesterSignup.astro';
+const base = import.meta.env.BASE_URL;
+---
+
+<StarlightPage
+  frontmatter={{
+    title: 'Join the testing program',
+    description: 'Optional registration for interest in upcoming Muse alpha and beta tests.',
+    tableOfContents: false,
+    prev: false,
+    next: false,
+  }}
+>
+  <p>Help shape Muse by expressing interest in upcoming alpha and beta tests.</p>
+  <p>Registration is optional. It expresses interest, does not guarantee acceptance into a test, and does not create an account required to use Muse. Your manuscripts stay on your device.</p>
+  <p>When registration opens, the form will ask for your email, an optional name, platform interests (Windows, macOS, Linux, iOS/iPadOS, and Android), and your email preferences. Platform interest does not mean a build is available.</p>
+  <TesterSignup />
+  <h2>Your choices</h2>
+  <p>Registration will be handled by Brevo for Lunareos LLC. Choose testing invitations, relevant build announcements, and general product news separately. Email confirmation is required before announcements.</p>
+  <ul>
+    <li><strong>Stop emails:</strong> use the unsubscribe link in a registration-related email. Topic preferences will be available through the email’s preference link once configured.</li>
+    <li><strong>Leave testing:</strong> contact support to request departure from the testing program. This is separate from stopping emails.</li>
+    <li><strong>Request deletion:</strong> contact the privacy address to request removal of registration information. This is separate from leaving testing.</li>
+  </ul>
+  <p>See <a href={`${base}privacy/#website-tester-registration`}>registration privacy information</a> and <a href={`${base}support/#tester-registration-and-email`}>support and contact details</a>. Departure and deletion requests are handled by email; there is no self-service account portal.</p>
+</StarlightPage>

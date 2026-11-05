@@ -55,7 +55,26 @@ of the queue.
 
 ## Privacy
 
-MUSE stores your work on your device and collects no data about you. See the Privacy Policy
-for the details.
+The offline MUSE application stores your work on your device and does not collect usage
+telemetry. Optional website registration is separate. See the [Privacy Policy](/privacy/).
 
 Privacy questions: **privacy@lunareos.com**
+
+## Tester registration and email
+
+[Tester registration](/testers/) is not open yet. When available, it will express interest
+in upcoming tests; it will not guarantee acceptance or create an account required to use MUSE.
+
+- **Stop emails:** once registration emails are enabled, use their unsubscribe link.
+  Topic preferences will use the email’s preference link once configured. If you cannot
+  access a link, contact **support@lunareos.com** for help.
+- **Leave the testing program:** email **support@lunareos.com** and explicitly request
+  departure. Leaving testing and unsubscribing from emails are separate requests.
+- **Request deletion of registration information:** email **privacy@lunareos.com**.
+  Deletion and any limited suppression retention are covered by the registration privacy
+  notice, which must be finalized before registration opens.
+
+Departure and deletion requests are handled by email, without a self-service account portal.
+Send the request from the relevant address where possible. Do not include manuscripts,
+passwords, or confirmation links. An email-address change will require confirmation of the
+new address; support can help with the process once registration is available.

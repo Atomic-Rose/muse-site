@@ -1,0 +1,53 @@
+---
+import { brevoSignupFormUrl } from '../config/registration';
+
+interface Props {
+  formUrl?: string;
+}
+
+const { formUrl = brevoSignupFormUrl } = Astro.props;
+const configured = formUrl.trim();
+if (configured) {
+  const url = new URL(configured);
+  if (url.protocol !== 'https:' || url.username || url.password || url.hash) {
+    throw new Error('The public Brevo signup URL must use HTTPS without credentials or a fragment.');
+  }
+}
+---
+
+{configured ? (
+  <div class="signup">
+    <p>Use the Brevo form below to choose your interests. Confirm your email using the link Brevo sends you before receiving announcements.</p>
+    <p><a href={configured} rel="noreferrer">Open the registration form directly</a> if the embedded form does not load or is difficult to use.</p>
+    <iframe
+      src={configured}
+      title="Muse tester registration form, hosted by Brevo"
+      referrerpolicy="no-referrer"
+      loading="lazy"
+    />
+  </div>
+) : (
+  <aside class="unavailable" aria-label="Registration availability">
+    <p><strong>Tester registration is not open yet.</strong></p>
+    <p>The signup form is not available. No registration information is collected on this page. Please check back later.</p>
+  </aside>
+)}
+
+<style>
+  iframe {
+    display: block;
+    width: 100%;
+    height: 72rem;
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 0.5rem;
+    background: white;
+  }
+  .unavailable {
+    padding: 1rem 1.25rem;
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 0.5rem;
+    background: var(--sl-color-gray-6);
+  }
+  .unavailable p { margin-block: 0 0.5rem; }
+  .unavailable p:last-child { margin-bottom: 0; }
+</style>
